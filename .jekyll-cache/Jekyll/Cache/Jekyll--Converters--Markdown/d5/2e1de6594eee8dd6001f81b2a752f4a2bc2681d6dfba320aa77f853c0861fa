@@ -1,0 +1,114 @@
+I"�<div class="front-cover" style="background:url(./images/front-cover.jpg) no-repeat fixed center;background-size:cover;overflow:hidden;">
+    
+    <section>
+        <div class="container" style="padding-top:1em;">
+            <h1 style="text-align:center;color:#fff;font-weight:600;" id="site-title-front">Loji44's Blog Site.</h1>
+            <h3 style="text-align:center;color:#fff;font-weight:600;font-size:90%;">这是随手写的描述</h3>
+        </div>
+<div class="featured" style="border-top:1px solid grey;margin:0 10% 0 10%;">
+<div style="background-image:linear-gradient(-130deg, rgba(14,21,58,0.3) 10%, rgba(74,76,123,0.5) 35%, rgba(161,140,171,0.2) 65%, rgba(243,201,215,0.2) 90%);">
+
+<h3 style="text-align:center;font-size:120%;">最新文章：<a href="https://loji44.github.io/stories/martian-sunset-phobos/" style="text-align:center;color:white;font-weight:600;">火星的日落</a></h3>
+<p style="text-align:left;color:#fff;font-size:90%;padding-bottom:0.5em;padding-left:2%;padding-right:2%;">火星的日落常常呈现出与地球完全不同的景象，比如著名的蓝色日落。</p>
+
+</div>
+</div>
+    </section>
+
+</div>
+
+<h1 id="一个简洁的-jekyll-主题">一个简洁的 Jekyll 主题</h1>
+
+<p>基于 <a href="https://github.com/mmistakes/skinny-bones-jekyll">skinny-bones</a> 修改的主题。在制作<a href="http://interimm.org/magazine">星际移民中心的星海航纪站点</a>的时候，做了一些汉化和修改。</p>
+
+<p>部分 layouts 和 includes 预设了中英文两种模板。</p>
+
+<p>沿用原作者的 MIT License.</p>
+
+<p>GitHub + <a href="http://prose.io">prose.io</a> 可以像普通的带有数据库的博客（如Wordpress）等一样实现在线编辑在线发布。</p>
+
+<p><a href="https://github.com/emptymalei/planets-jekyll">GitHub 上的项目地址在此</a></p>
+
+<hr />
+
+<h2 id="简要文档">简要文档</h2>
+
+<h3 id="github-上的设置">GitHub 上的设置</h3>
+
+<p>改为自己的站点，只需要 Fork <a href="https://github.com/emptymalei/planets-jekyll">这个 repository</a>，然后将 repository 名称改为自己想要的名称。</p>
+
+<blockquote>
+  <p>一般而言，对于个人，想要使用 <code>username.github.io</code> 作为网站名称的，需要将 repository 改名为 <code>username.github.io</code> 并且将所有的文件放在 <code>master</code> 分支。GitHub 会自动将 <code>master</code> 分支中的 jekyll 内容编译为 html. 同样的道理，对于项目页面，jekyll 的源文件放在 <code>gh-pages</code> 分支中，GitHub 也会自动编译为 html 页面。</p>
+</blockquote>
+
+<p>然后需要做以下修改：</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />按照上面的要求修改 repository 名称，并且将内容放在正确的分支中。</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />修改 <code>_config.yml</code> 中的内容，包括站点名称等等。其中 duoshuo 代码是需要去 http://duoshuo.com 注册一个账号并且创建一个网站的评论框，获取代号。</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />请替换现有的根目录下面的 favicon.ico, images 目录下的 logo-120x120.png，front-cover.jpg（显示在首页的背景图片） 等文件。<code>images/authors</code> 目录下的图像是用于作者头像，将头像放在这里，然后在下一步中更改配置文件。<code>images/mars</code> 目录中的文件是在示例 post 中用到的，可以删除。</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />在 <code>_data/authors.yml</code> 中修改作者列表（格式请参照文件中的例子 example）；在 <code>_data/footer.yml</code> 中修改网站底部的几个链接（可以添加，但是添加太多了就要换行了，不好看）；在 <code>_data/navigation.yml</code> 文件中修改站点顶部的链接（同时影响右侧边栏的滑出导航）。</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />其他的设置和自定义请阅读 jekyll 的官方文档。</li>
+</ul>
+
+<blockquote>
+  <p>如果你不了解 jekyll，简略说来：</p>
+
+  <ol>
+    <li>
+      <p>所有的文章都在 <code>_posts</code> 目录下面。posts 的命名按照 jekyll 的要求，需要以日期格式开头。如果不这样命名，不会自动索引，但是依然会自动生成 html 页面，这时候需要手动索引。<strong>我在目录中保留了几篇样稿，这样可以模仿格式，请在正式发布站点时删除。</strong></p>
+    </li>
+    <li>
+      <p><code>science</code>，<code>til</code>，<code>stories</code>，<code>history</code>，<code>club</code>，<code>about</code>，这些都是可以删除或者更改的文件目录。这些文件夹的名称是 post 的 category 名称，里面的 index.md 是索引页面，可以自己更改，我个人习惯在根目录建立这样的文件夹。也可以参考其他用法。</p>
+    </li>
+    <li>
+      <p><code>_posts</code> 目录中 posts 中的作者的代码需要与 <code>_data/authors.yml</code> 中的一致。例如在 <code>_posts</code> 目录中写了一篇名为 <code>2014-10-18-martian-sunset-phobos.md</code> 的新文章，其中 meta data 中设定作者为 <code>author: example</code> ，那么在 <code>_data/authors.yml</code> 中需要有 <code>example</code> 这个作者。</p>
+    </li>
+    <li>
+      <p>另外，所有的 html 文件会默认全部原封不动进入到 GitHub 生成的站点中。</p>
+    </li>
+  </ol>
+</blockquote>
+
+<h3 id="workflow">workflow</h3>
+
+<p>登录 prose.io，链接 GitHub 账号，开始写吧，就这么简单。prose.io 专门为基于 jekyll 的写作做了优化，例如在编辑区域不会看到 meta data，而是需要在右侧的边栏有个 meta data 的按钮，就像正常的 Wordpress 博客使用一样。</p>
+
+<hr />
+
+<p>以下是文章列表功能示例。请按照需要改更 <code>site.categories.xxx</code> 中的 <code>xxx</code>，<code>xxx</code> 需要与你的 <code>_posts</code> 目录中的文章的 metadata 中的 <code>categories</code> 对应起来。</p>
+
+<h2 id="近期科学">近期科学</h2>
+
+<div class="tiles">
+
+	<li><span>2014 年 10 月 16 日</span> &raquo; <a href="https://loji44.github.io/science/mars-north/">在火星上如何通过星空辨别方向</a></li>
+
+</div>
+<!-- /.tiles -->
+
+<p><a href="./science/">查看所有科学（共 1 篇）</a></p>
+
+<h2 id="近期故事">近期故事</h2>
+
+<div class="tiles">
+
+
+	<li><span>2014 年 10 月 18 日</span> &raquo; <a href="https://loji44.github.io/stories/martian-sunset-phobos/">火星的日落</a></li>
+
+
+</div>
+<!-- /.tiles -->
+
+<p><a href="./stories/">查看所有故事（共 1 篇）</a></p>
+
+<h2 id="近期历史">近期历史</h2>
+
+<div class="tiles">
+
+</div>
+<!-- /.tiles -->
+
+<p>暂无历史类文章</p>
+
+:ET
