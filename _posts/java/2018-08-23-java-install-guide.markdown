@@ -33,11 +33,11 @@ tags:
 $ mv jdk-8u221-linux-x64.tar.gz /usr/local/ && cd /usr/local/ && tar -zxvf jdk-8u221-linux-x64.tar.gz
 ```
 
-解压之后将得到`jdk1.8.0_221`文件夹。**即，JDK的安装路径为：`/usr/local/jdk1.8.0_221`，后面环境变量`JAVA_HOME`就是设置成JDK的安装路径。**
+解压之后将得到`jdk1.8.0_221`文件夹。即，JDK的安装路径为：`/usr/local/jdk1.8.0_221`，后面环境变量`JAVA_HOME`就是设置成JDK的安装路径。
 
 配置Java环境变量：
 
-- 在用户主目录下编辑`.bashrc`文件（`vim ~/.bashrc`），在文件尾部追加以下内容：
+- 编辑`.bashrc`文件 (`vim ~/.bashrc`) 追加以下内容：
 
 ```bash
 export JAVA_HOME=/usr/local/jdk1.8.0_221
@@ -54,8 +54,6 @@ Java(TM) SE Runtime Environment (build 1.8.0_221-b11)
 Java HotSpot(TM) 64-Bit Server VM (build 25.221-b11, mixed mode)
 ```
 
-**出现以上信息说明成功安装JDK并且环境变量配置正确。否则需要检查环境变量的配置是否正确。**
-
 ### 3. Mac OS系统安装JDK
 
 本文使用`macOS Mojave 10.14.6`系统版本来做演示；JDK版本为`1.8.0_221`。
@@ -65,7 +63,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.221-b11, mixed mode)
 
 配置Java环境变量：
 
-- 打开终端，执行`/usr/libexec/java_home -V`指令来查看JDK的安装路径：
+- 执行`/usr/libexec/java_home -V`查看JDK的安装路径：
 
 ```bash
 $ /usr/libexec/java_home -V
@@ -77,7 +75,7 @@ Matching Java Virtual Machines (1):
 
 **`/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home`就是JDK的安装路径，后面配置`JAVA_HOME`环境变量会使用到该路径。**
 
-- `vim ~/.bash_profile`编辑用户主目录下的`.bash_profile`文件，在文件中加入以下内容：
+- 执行命令`vim ~/.bash_profile`：追加以下内容：
 
 ```bash
 JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home
@@ -87,7 +85,7 @@ export JAVA_HOME
 export PATH
 ```
 
-- 编辑完毕之后，执行命令：`source ~/.bash_profile`来使`.bash_profile`文件立即生效。
+- 编辑完毕之后，执行`source ~/.bash_profile`来使`.bash_profile`文件立即生效。
 - 最后，检验一下JDK是否安装以及环境变量是否配置正确：
 
 ```bash
@@ -96,8 +94,6 @@ java version "1.8.0_221"
 Java(TM) SE Runtime Environment (build 1.8.0_221-b11)
 Java HotSpot(TM) 64-Bit Server VM (build 25.221-b11, mixed mode)
 ```
-
-**出现以上信息说明成功安装JDK并且环境变量配置正确。否则需要检查环境变量的配置是否正确。**
 
 ### 4. 关于CLASSPATH环境变量
 
@@ -110,3 +106,5 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.221-b11, mixed mode)
 ```bash
 $ java -classpath ~/lib;./fastjson-1.2.58.jar Test
 ```
+
+<hr />

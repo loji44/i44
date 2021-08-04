@@ -27,3 +27,5 @@ $ scp -rp arthas-boot.jar appweb@192.168.100.4:/appweb/
 所以解决方案可以这样：在我的机器上（可联外网），先运行`java -jar arthas-boot.jar`下载得到一个`.arthars`文件夹，里面存放的就是arthas-boot.jar所需的一些jar包依赖。`.arthars`文件夹会默认在用户主目录下生成。
 
 最后将`.arthas`文件夹也`scp`传送到客户的目标机器，即可完成。
+
+<hr />

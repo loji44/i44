@@ -131,3 +131,5 @@ public class Test {
 ```
 
 method2的事务传播机制是`Propagation.NOT_SUPPORTED`，即不支持事务。如果当前存在事务，它会挂起当前事务，并以非事务的方式执行method2。执行完method2再恢复method1的事务。在这个例子中，method2就不会以事务方式执行，发生异常也不会回滚method2中涉及到的数据库操作。
+
+<hr />

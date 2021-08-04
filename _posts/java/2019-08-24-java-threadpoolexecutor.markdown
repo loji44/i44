@@ -165,3 +165,5 @@ JDK提供了`java.util.concurrent.Executors`这个工具类来帮助我们快速
 
 - `FixedThreadPool`、`SingleThreadPool`的工作队列最大容量为`Integer.MAX_VALUE`，这有可能会随着工作队列中的任务堆积而导致`OOM`；
 - `CachedThreadPool`、`ScheduledThreadPool`允许最大线程数为`Integer.MAX_VALUE`，这也有可能因为创建大量线程导致`OOM`或者线程切换开销巨大。
+
+<hr />

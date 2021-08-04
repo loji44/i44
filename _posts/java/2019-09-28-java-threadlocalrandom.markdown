@@ -96,4 +96,4 @@ public class ThreadLocalRandomTest {
 
 不要在多线程间共享ThreadLocalRandom的实例，因为这样跟共享Random实例一样会产生并发更新`seed`的竞争。
 
-
+<hr />

@@ -43,6 +43,7 @@ $ chmod +x /usr/local/bin/iterm2-send-zmodem.sh /usr/local/bin/iterm2-recv-zmode
 **注意：最后一项Instant一定要勾选上！** 如下图的配置：
 
 ![iterm2-config.png](/static/image/2020-01/iterm2-config.png)
+
 <hr/>
 
 参考：
