@@ -1,5 +1,4 @@
 ---
-permalink: /about.html
 layout: about
 title:  About
 date:   2021-08-03 16:01:18 +0800
