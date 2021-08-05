@@ -13,7 +13,7 @@ tags:
 - 配置ExSimple作为博客主题
 
 ### 1. 安装Jekyll博客开发环境
-Jekyll依赖Ruby语言环境，所以要先安装Ruby。我自己电脑（Mac OS）本身自带了Ruby，版本为：
+Jekyll依赖Ruby语言环境，所以要先安装Ruby。我自己电脑(MacOS)本身自带了Ruby，版本为：
 
 ```bash
 $ ruby -v
