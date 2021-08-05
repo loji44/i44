@@ -7,10 +7,12 @@
       {% include nav.html %}
       <div class="site">
           <ul class="posts">
+            {% assign tag_display = page.title | split: " | " | first %}
+            <div class="tag_name">-- TAG: {{ tag_display }} --</div>
             {% assign tag = page.name | split: '.' | first | url_decode %}
-            <div class="tag_name">-- TAG: {{ tag }} --</div>
             {% for post in site.posts %}
-              {% if post.tags contains tag %}
+              {% assign tags = post.tags | downcase %}
+              {% if tags contains tag %}
                 <li><span class="post_date">{{ post.date | date_to_string }}</span><a href="{{ post.url }}">{{ post.title }}</a></li>
               {% endif %}
             {% endfor %}
@@ -21,7 +23,3 @@
   </body>
   {% include footer.html %}
 </html>
-
-<script type="application/javascript">
-    console.log(window.location.href);
-</script>

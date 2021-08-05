@@ -3,7 +3,7 @@ layout: post
 title: Mac OS下iTerm2终端使用rz/sz进行远程文件的下载/上传
 date: 2020-01-13 15:25:13.000000000 +08:00
 tags: 
-  - Mac OS
+  - MacOS
   - iTerm2
 ---
 

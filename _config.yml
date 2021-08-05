@@ -8,3 +8,13 @@ nav:
   - TAGS=/tags.html
   - RSS=/feed.xml
   - 🔍SEARCH=/search.html
+
+# 不要动这个配置：根据tag生成页面
+plugins:
+  - jekyll-archives
+# 不要动这个配置：根据tag生成页面
+jekyll-archives:
+  enabled: ['tags']
+  layout: tag_post_list
+  permalinks:
+    tag: '/tags/:name.html'
