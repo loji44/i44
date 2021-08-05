@@ -8,14 +8,15 @@
       <div class="site">
         <div class="tags_cloud">
           {% for tag in site.tags %}
-            <a href="/tags/{{ tag | first }}.html">
+            <!-- '/'、空格转换成 '-' -->
+            {% assign tag_url = tag | first | downcase | replace: "/", "-" | replace: " ", "-" %}
+            <a href="/tags/{{ tag_url }}.html">
               {{ tag | first }}<small>&nbsp;[{{ tag | last | size }}]</small>
             </a>
           {% endfor %}
         </div>
       </div>
     </div>
-
   </body>
 
   {% include footer.html %}
