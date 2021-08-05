@@ -8,3 +8,6 @@ nav:
   - TAGS=/tags.html
   - RSS=/feed.xml
   - 🔍SEARCH=/search.html
+
+exclude:
+  - deplay.sh
