@@ -50,7 +50,7 @@ Spring在启动的时候扫描到`@Service`注解，会为类创建实例对象�
 
 因为createOrder上有`@Transactional`注解，所以Spring在代理类中对这个方法进行了增强：在反射调用invoke进行`try...catch`，并在catch到异常的时候进行数据库`ROLLBACK`操作。
 
-所以Spring事务的是否生效，取决于我们是否是通过「代理类的对象实例」来进行方法的调用。例如最上面提到的例子，直接在createDefaultSob方法中调用了save这个事务方法，这种调用方式是不会走代理调用的，所以事务也根本不会生效。我们应该通过`xxxService.method`这种调用方式，才能使事务生效：
+所以Spring事务的是否生效，取决于我们是否是通过「代理类的对象实例」来进行方法的调用。例如最上面提到的例子，直接在`func`方法中调用了事务方法`save`，这种调用方式是不会走代理调用的，所以事务也根本不会生效。我们应该通过`xxxService.method`这种调用方式，才能使事务生效：
 
 ```java
 @Service

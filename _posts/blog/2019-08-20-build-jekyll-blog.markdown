@@ -12,7 +12,7 @@ tags:
 - 安装Jekyll博客的开发环境
 - 配置ExSimple作为博客主题
 
-### 1. 安装Jekyll博客开发环境
+### 一、安装Jekyll博客开发环境
 Jekyll依赖Ruby语言环境，所以要先安装Ruby。我自己电脑(MacOS)本身自带了Ruby，版本为：
 
 ```bash
@@ -80,7 +80,7 @@ $ gem install bundler jekyll
 
 这个安装过程可能会有点耗时，请耐心等待安装Jekyll完成 ...
 
-### 2. 配置ExSimple作为博客主题
+### 二、配置ExSimple作为博客主题
 
 至此，Jekyll开发环境搭建好了。现在来配置ExSimple作为博客主题。
 
@@ -147,7 +147,7 @@ Configuration file: /root/your_blog/_config.yml
 
 使用`jekyll serve -h`来查看Jekyll启动服务时支持的其他启动参数。
 
-### 3. 将Jekyll博客以静态资源方式部署
+### 三、将Jekyll博客以静态资源方式部署
 
 博客文章写完，想将博客打包成静态资源部署到Web服务器上，例如使用`Nginx`或者`Github Pages`进行部署。
 

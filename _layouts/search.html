@@ -1,0 +1,20 @@
+<!-- 搜索页面 -->
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <div id="container">
+      {% include nav.html %}
+      <div class="site">
+        <div class="page-search">
+          <input id="search-input" type="text" placeholder="🔍 请输入关键词搜索文章" />
+        </div>
+
+        <p id="search-result-title" style="color: #ccc; font-size: 14px; margin-top: 10px"></p>
+        <ul id="search-result" class="posts">
+        </ul>
+      </div>
+    </div>
+  </body>
+  {% include footer.html %}
+</html>
