@@ -1,6 +1,6 @@
 ---
 layout: post
-title: pip/pip3配置国内源，为Python依赖包的安装加速
+title: pip/pip3配置国内源，为Python包的安装加速
 date: 2022-01-16 17:20:02.000000000 +08:00
 tags: 
   - Python

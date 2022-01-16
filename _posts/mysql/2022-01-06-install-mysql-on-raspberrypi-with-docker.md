@@ -7,21 +7,23 @@ tags:
   - MySQL
   - Docker
 ---
-树莓派4B属于ARM架构，要在上面安装MySQL，需要选择适配ARM平台的MySQL Docker镜像。MySQL官方团队出了一个可以在ARM平台上运行的镜像：[https://registry.hub.docker.com/r/mysql/mysql-server](https://registry.hub.docker.com/r/mysql/mysql-server)
+
+树莓派4B属于ARM架构，想要在上面安装MySQL，必须选择适配ARM平台的MySQL Docker镜像。MySQL官方出了一个可以在ARM平台上运行的镜像：<a href="https://registry.hub.docker.com/r/mysql/mysql-server" target="_blank">https://registry.hub.docker.com/r/mysql/mysql-server</a>
 
 ```bash
 $ docker pull mysql/mysql-server:8.0.27-aarch64
 ```
 
-使用Docker-compose运行，编辑`docker-compose.yaml`内容如下：
+这里使用Docker-compose运行，编辑`docker-compose.yaml`内容如下：
+
 ```yaml
 version: "3"
 services:
-  mysql-server_001:
-    image: mysql/mysql-server:5.7
+  mysql-server:
+    image: mysql/mysql-server:8.0.27-aarch64
     container_name: mysql-server
     ports:
-      - "33001:3306"
+      - "3306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: root_pass
     volumes:
@@ -30,6 +32,7 @@ services:
 ```
 
 启动MySQL docker容器：
+
 ```bash
 $ docker-compose up -d mysql-server
 ```
@@ -77,4 +80,12 @@ Query OK, 0 rows affected (0.02 sec)
 
 成功执行`UPDATE user SET host='%' WHERE user = 'root';`之后记得执行`FLUSH PRIVILEGES;`刷新权限！
 
-MySQL8创建用户并给用户授权：[https://www.cnblogs.com/dongxt/p/14883465.html](https://www.cnblogs.com/dongxt/p/14883465.html)
+MySQL8之后，用户管理和权限管理跟之前版本命令的使用方式有所不同，参考官方说明：<a href="https://dev.mysql.com/doc/refman/8.0/en/grant.html" target="_blank">https://dev.mysql.com/doc/refman/8.0/en/grant.html</a>
+
+<hr />
+
+参考：
+
+- <a href="https://dev.mysql.com/doc/refman/8.0/en/grant.html" target="_blank">https://dev.mysql.com/doc/refman/8.0/en/grant.html</a>
+- <a href="https://www.cnblogs.com/dongxt/p/14883465.html" target="_blank">MySQL8.0以上版本创建用户并授权远程连接</a>
+
