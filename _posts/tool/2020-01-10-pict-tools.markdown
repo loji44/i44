@@ -17,8 +17,6 @@ tags:
 
 ### 2. 图片格式转换工具
 
-- 支持多种图片格式转换，例如`png`和`jpg`互转：
-
-<a href="https://png2jpg.com/zh/" target="_blank"><img src="/static/image/2020/png_to_jpg.jpg"></a>
+- 支持多种图片格式转换，例如`png`和`jpg`互转：<a href="https://png2jpg.com/zh/" target="_blank">png2jpg</a>
 
 <hr />
