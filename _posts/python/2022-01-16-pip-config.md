@@ -13,6 +13,7 @@ tags:
 timeout=60
 index-url=https://pypi.tuna.tsinghua.edu.cn/simple
 ```
+更多配置项可以参考官网配置说明：<a href="https://pip.pypa.io/en/stable/topics/configuration" target="_blank">https://pip.pypa.io/en/stable/topics/configuration</a>
 
 国内可选pip源：
 
