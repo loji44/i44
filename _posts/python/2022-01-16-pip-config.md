@@ -1,6 +1,6 @@
 ---
 layout: post
-title: pip/pip3配置国内源，为安装依赖包加速
+title: pip/pip3配置国内源，为Python依赖包的安装加速
 date: 2022-01-16 17:20:02.000000000 +08:00
 tags: 
   - Python
@@ -17,14 +17,14 @@ index-url=https://pypi.tuna.tsinghua.edu.cn/simple
 
 国内可选pip源：
 
-- 清华：https://pypi.tuna.tsinghua.edu.cn/simple
-- 阿里云：http://mirrors.aliyun.com/pypi/simple
-- 中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple
-- 华中理工大学：http://pypi.hustunique.com
-- 山东理工大学：http://pypi.sdutlinux.org
-- 豆瓣：http://pypi.douban.com/simple
+- 清华大学镜像：<a href="https://pypi.tuna.tsinghua.edu.cn/simple" target="_blank">https://pypi.tuna.tsinghua.edu.cn/simple</a>
+- 阿里云源：<a href="http://mirrors.aliyun.com/pypi/simple" target="_blank">http://mirrors.aliyun.com/pypi/simple</a>
+- 豆瓣软件源：<a href="http://pypi.douban.com/simple" target="blank">http://pypi.douban.com/simple<a/>
+- 中国科技大学 <a href="https://pypi.mirrors.ustc.edu.cn/simple" target="_blank">https://pypi.mirrors.ustc.edu.cn/simple</a>
+- 华中理工大学：<a href="http://pypi.hustunique.com" target="_blank">http://pypi.hustunique.com</a>
+- 山东理工大学：<a href="http://pypi.sdutlinux.org" target="_blank">http://pypi.sdutlinux.org</a>
 
-</ hr>
+<hr />
 
 参考：
 - <a href="https://pip.pypa.io/en/stable/topics/configuration" target="_blank">https://pip.pypa.io/en/stable/topics/configuration</a>
