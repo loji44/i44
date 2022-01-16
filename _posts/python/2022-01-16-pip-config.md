@@ -27,5 +27,9 @@ index-url=https://pypi.tuna.tsinghua.edu.cn/simple
 
 参考：
 - <a href="https://pip.pypa.io/en/stable/topics/configuration" target="_blank">https://pip.pypa.io/en/stable/topics/configuration</a>
+- <a href="https://mirrors.tuna.tsinghua.edu.cn/help/pypi/" target="_blank">清华大学开源软件镜像站：pypi 镜像使用帮助</a>
+
+
+
 
 
