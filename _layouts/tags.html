@@ -10,7 +10,7 @@
           {% for tag in site.tags %}
             <!-- '/'和空格转换成'-'、tag英文转换成小写字母 -->
             {% assign tag_url = tag | first | downcase | replace: "/", "-" | replace: " ", "-" %}
-            <a class="extra" href="/tags/{{ tag_url }}.html">
+            <a href="/tags/{{ tag_url }}.html">
               {{ tag | first }}<small>&nbsp;[{{ tag | last | size }}]</small>
             </a>
           {% endfor %}
